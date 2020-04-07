@@ -2,8 +2,8 @@
 
 <head>
     <meta name=viewport content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="//cdnjs.loli.net/ajax/libs/mdui/0.4.3/css/mdui.min.css">
-    <link rel="icon" href="https://cdn.jsdelivr.net/gh/gaowanliang/p/img/gs.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/mdui.min.css">
+    <link rel="icon" href="css/gs.png"  />
     <title>LaTeX2MathML</title>
     <script src="https://cdn.bootcss.com/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </head>
@@ -69,7 +69,7 @@
         </div>
         <div>
             <br>
-            <p class="mdui-typo-headline-opacity">结果:</p>
+            <p class="mdui-typo-headline-opacity">预览结果:</p>
             <div class="box" id="box" style="visibility:hidden">
                 <div id="MathOutput" class="output">
                     $$
@@ -78,11 +78,24 @@
                 </div>
             </div>
         </div>
+        <br></br>
+        <h2>使用此工具将TEX格式公式键入Word</h2>
+        <li>1.输入TEX代码后回车，看到显示的公式预览</li>
+        <li>2.在预览的公式上右键->Show Math As->MathML Code点击显示MathML代码</li>
+        <li>3.将弹出框中代码复制，在word中右键-&gt;粘贴-&gt;只保留文本。
+        大功告成，呈现出漂亮的公式了。</li>
+        <li>
+            ————这样的好处之一是可以迅速从matlab输出latex格式公式，并键入word。
+        </li>
     </div>
     <footer class="mdui-center mdui-text-center">
         <p class="mdui-typo-caption-opacity">一个将LaTeX方便的转换为MathML的工具</p>
-        <p class="mdui-typo-caption-opacity">Made by:高玩梁 Powered by:<a href="https://www.mathjax.org/"
-                target="_blank">MathJax™</p>
+        <p class="mdui-typo-caption-opacity">
+            Made by:<a href="https://github.com/gaowanliang/LaTeX2MathML">高玩梁</a >
+             Powered by:<a href="https://www.mathjax.org/"  target="_blank">MathJax™</a>
+            Published on:<a href="http://eleasy.cn">电易中文网eleasy.cn</a>
+            </p>
+           
     </footer>
     <script>
         function clean() {
@@ -94,8 +107,8 @@
             }
         }
     </script>
-    <script src="//cdnjs.loli.net/ajax/libs/mdui/0.4.3/js/mdui.min.js"></script>
-    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script src="css/mdui.min.js"></script>
+    <script src="css/jquery.min.js"></script>
 
 </body>
 
